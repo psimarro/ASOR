@@ -1,0 +1,25 @@
+total 108
+drwxr-x--- 2 pedro pedro  4096 nov 11 10:12 carpeta
+-rw-r--r-- 1 pedro pedro     0 nov 16 14:14 echo
+-rwxr-xr-x 1 pedro pedro 17296 nov 16 14:09 ej11
+-rw-r--r-- 1 pedro pedro   469 nov 16 14:09 ej11.cpp
+-rw-r--r-- 1 pedro pedro    94 nov 16 14:13 ej12.cpp
+-rwxr-xr-x 1 pedro pedro 17112 nov 11 10:27 ej5
+-rw-r--r-- 1 pedro pedro   189 nov 11 10:30 ej5.cpp
+-rwxr-xr-x 1 pedro pedro 17160 nov 11 10:26 ej7
+-rw-r--r-- 1 pedro pedro   205 nov 11 10:26 ej7.cpp
+-rwxr-xr-x 1 pedro pedro 17448 nov 14 09:45 ej9
+-rw-r--r-- 1 pedro pedro   918 nov 14 09:44 ej9.cpp
+-rw-r--r-- 1 pedro pedro     0 nov 16 14:26 fichero
+-rw-r--r-x 1 pedro pedro     0 nov 11 10:27 fichero_ej5
+-rw-r----- 1 pedro pedro     0 nov 11 10:27 fichero_ej7
+-rw-r----- 1 pedro pedro     5 nov 15 19:16 fichero.hard
+lrwxrwxrwx 1 pedro pedro     7 nov 16 11:49 fichero.sym -> fichero
+  Fichero: carpeta
+  Tamaño: 4096      	Bloques: 8          Bloque E/S: 4096   directorio
+Dispositivo: 806h/2054d	Nodo-i: 2632958     Enlaces: 2
+Acceso: (0750/drwxr-x---)  Uid: ( 1000/   pedro)   Gid: ( 1000/   pedro)
+Acceso: 2019-11-15 18:50:26.669283365 +0100
+Modificación: 2019-11-11 10:12:57.926653290 +0100
+      Cambio: 2019-11-11 10:12:57.926653290 +0100
+    Creación: -

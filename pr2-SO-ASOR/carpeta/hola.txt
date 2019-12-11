@@ -1,0 +1,13 @@
+total 4
+drwxr-xr-x 2 pedro pedro 4096 nov 16 17:18 carpeta2
+-rw-r--r-- 1 pedro pedro    0 nov 16 18:10 hola.
+lrwxrwxrwx 1 pedro pedro    8 nov 16 17:28 hola.sym -> hola.txt
+-rw-r--r-- 1 pedro pedro    0 nov 16 18:10 hola.txt
+  Fichero: carpeta2/
+  Tamaño: 4096      	Bloques: 8          Bloque E/S: 4096   directorio
+Dispositivo: 806h/2054d	Nodo-i: 2650061     Enlaces: 2
+Acceso: (0755/drwxr-xr-x)  Uid: ( 1000/   pedro)   Gid: ( 1000/   pedro)
+Acceso: 2019-11-16 17:18:49.606165985 +0100
+Modificación: 2019-11-16 17:18:49.602165872 +0100
+      Cambio: 2019-11-16 17:18:49.602165872 +0100
+    Creación: -
