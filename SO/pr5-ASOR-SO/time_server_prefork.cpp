@@ -43,8 +43,7 @@ int main(int argc, char **argv){
     act.sa_flags = SA_RESTART;
 
     bool end = false;
-
-
+    
     while(!end){
 
         char buf[2] = "";
@@ -63,9 +62,9 @@ int main(int argc, char **argv){
                     std::cout << "Saliendo...\n";
                     close(serv_sock);
                     end = true;
-                    //kill(getppid(), SIGKILL);
+                    kill(getppid(), SIGKILL);
                 }
-                else{ //Comando valido: d, tsys/
+                else{ //Comando valido: d, t
                     strcat(msg, "\n");
                     sendto(serv_sock, msg, strlen(msg), 0, (struct sockaddr*)&addr_cli, leng_addr_cli);
                 }
