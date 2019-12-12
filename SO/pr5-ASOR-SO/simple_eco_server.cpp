@@ -37,25 +37,28 @@ int main(int argc, char **argv){
     struct sockaddr_storage cli;
     socklen_t len_cli = sizeof(cli);        
 
-    
-    cli_sock = accept(serv_sock, (struct sockaddr *) &cli, &len_cli);
+    while(true){
+        cli_sock = accept(serv_sock, (struct sockaddr *) &cli, &len_cli);
 
-    char host[NI_MAXHOST], port[NI_MAXSERV];
-    getnameinfo((struct sockaddr *) &cli, len_cli, host, NI_MAXHOST, port, NI_MAXSERV,
-    NI_NUMERICHOST | NI_NUMERICSERV);
+        char host[NI_MAXHOST], port[NI_MAXSERV];
+        getnameinfo((struct sockaddr *) &cli, len_cli, host, NI_MAXHOST, port, NI_MAXSERV,
+        NI_NUMERICHOST | NI_NUMERICSERV);
 
-    std::cout << "Conexión desde: " << host << " " << port << "\n";
+        std::cout << "Conexión desde: " << host << " " << port << "\n";
 
-    int bytes_rec = 0;
-    char buf[256];
-    while(bytes_rec = recv(cli_sock, buf, 256, 0)){
-        buf[bytes_rec+1] = '\0';
-        send(cli_sock, buf, bytes_rec, 0);
+        int bytes_rec = 0;
+        char buf[256];
+        while(bytes_rec = recv(cli_sock, buf, 256, 0)){
+            buf[bytes_rec+1] = '\0';
+            send(cli_sock, buf, bytes_rec, 0);
+        }
+
+        std::cout << "Conexión terminada.\n";
+        close(cli_sock);
     }
-
-    std::cout << "Conexión terminada.\n";
+    
     close(serv_sock);
-    close(cli_sock);
+    
 
     return 0;
 }
